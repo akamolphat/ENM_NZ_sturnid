@@ -25,7 +25,7 @@
 #
 #    to
 #
-# invisible(clusterEvalQ(cl, source("/nesi/nobackup/uoa02613/A_Chapter5/scripts/humboldt70_custom.R")))
+# invisible(clusterEvalQ(cl, source("/nesi/nobackup/uoa02613/A_Chapter5/scripts/humboldt70.R")))
 #
 #    The path refers to the location of the script.
 #
@@ -706,7 +706,7 @@ humboldt.equivalence.stat <- function(z1, z2, rep = 100, correct.env = T, kern.s
     # invisible(clusterEvalQ(cl, library(humboldt)))
     #sim.o <- as.data.frame(matrix(unlist(parLapply(cl, 1:rep, equivalency.iter, z1, z2, nacinZ, threshinZ, kern.smoothinZ, Rin, pb, repT)), byrow = TRUE, ncol = 2))  #simulate random overlap
     pb <- NULL
-    invisible(clusterEvalQ(cl, source("/nesi/nobackup/uoa02613/A_Chapter5/scripts/humboldt70_custom.R")))
+    invisible(clusterEvalQ(cl, source("/nesi/nobackup/uoa02613/A_Chapter5/scripts/humboldt70.R")))
     sim.o <- as.data.frame(matrix(unlist(pblapply(1:rep, equivalency.iter, z1, z2, nacinZ, threshinZ, kern.smoothinZ, Rin, pb, repT, ncores,run.silent.equ, cor.env.n, userOS, cl=cl)), byrow = TRUE, ncol = 2)) #simulate random overlap
     stopCluster(cl)  #shutdown the cluster
   }		
@@ -885,7 +885,7 @@ humboldt.background.stat<- function(g2e, rep = 100, sim.dir = 1, env.reso, kern.
       cl <- makeCluster(ncores)  #open a cluster for parallelization
       clusterExport(cl=cl, c("z1", "scores.env12a", "scores.env2a", "scores.sp2a", "scores.env2c", "Rana.x", "Rana.y"), envir=environment())
       # invisible(clusterEvalQ(cl, library(humboldt)))
-      invisible(clusterEvalQ(cl, source("/nesi/nobackup/uoa02613/A_Chapter5/scripts/humboldt70_custom.R")))
+      invisible(clusterEvalQ(cl, source("/nesi/nobackup/uoa02613/A_Chapter5/scripts/humboldt70.R")))
       sim.o <- as.data.frame(matrix(unlist(pblapply(1:rep, background.iter.e, z1, scores.env12a, scores.env2a, scores.sp2a, scores.env2c, Rana.x, Rana.y, env.reso.sim, run.silent.bak, inE, Rin, ncores, userOS, threshinZ, kern.smoothinZ, pb, repT, cl=cl)), byrow = TRUE, ncol = 9)) #simulate random overlap
       stopCluster(cl)  #shutdown the cluster
     }		
@@ -902,7 +902,7 @@ humboldt.background.stat<- function(g2e, rep = 100, sim.dir = 1, env.reso, kern.
       cl <- makeCluster(ncores)  #open a cluster for parallelization
       clusterExport(cl=cl, c("z1", "scores.env12a", "scores.env2a", "scores.sp2a", "scores.env2c", "Rana.x", "Rana.y"), envir=environment())
       # invisible(clusterEvalQ(cl, library(humboldt)))
-      invisible(clusterEvalQ(cl, source("/nesi/nobackup/uoa02613/A_Chapter5/scripts/humboldt70_custom.R")))
+      invisible(clusterEvalQ(cl, source("/nesi/nobackup/uoa02613/A_Chapter5/scripts/humboldt70.R")))
       sim.o <- as.data.frame(matrix(unlist(pblapply(1:rep, background.iter.r, z1, scores.env12a, scores.env2a, scores.sp2a, scores.env2c, Rana.x, Rana.y, env.reso.sim, run.silent.bak, inE, Rin, ncores, userOS, threshinZ, kern.smoothinZ, pb, repT, cl=cl)), byrow = TRUE, ncol = 9)) #simulate random overlap
       stopCluster(cl)  #shutdown the cluster
       print("Finish running background.iter.e")
