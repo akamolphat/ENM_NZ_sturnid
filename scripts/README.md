@@ -2,6 +2,26 @@
 
 This is the README file for folders and files within the **scripts** folder.
 
+This folder is arranged as follows:
+```
+├── myna
+│   ├── blockCV_ENM
+│   │   └── README.md
+│   └── README.md
+├── starling
+│   ├── ENM
+│   │   └── README.md
+│   └── README.md
+├── humboldt70.R
+├── make_pop_dens.R
+├── make_pop_dens.sl
+├── plot_filtered_thinned_occurrences.R
+├── star_myna_varimp_plot.R
+├── compare_future_present_proj.R
+├── plot_clamping_masks.R
+└── README.md
+```
+
 This folder contains the following scripts:
 * `humboldt70.R` - This is the modified script of the humboldt R package version 1.0.0.420121, downloaded from <https://github.com/jasonleebrown/humboldt/tree/master/R>. Sadly, I did not track all the changes systematically after I downloaded the script. I did not make a lot of changes but git was unable to track the changes systematically, so I have just replaced the original file with the latest version.
   * For the script to work on your cluster, you will have to replace:
