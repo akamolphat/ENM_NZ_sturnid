@@ -9,4 +9,6 @@ This folder contains the following scripts:
    with the paths to humboldt70.R on your own cluster.
     *  e.g. `source("my_own_path/humboldt70.R")`
 * `make_pop_dens.R` - This script calculates population density from population counts per grid cell.
-* `make_pop_dens.sl` - This script runs make_pop_dens.R. Note that the paths in your local environment will change but this is uploaded here for completeness. 
+* `make_pop_dens.sl` - This script runs make_pop_dens.R. Note that the paths in your local environment will change but this is uploaded here for completeness.
+* `plot_filtered_thinned_occurrences.R` - This script makes **Figure 1** of the main text.
+* `plot_clamping_masks.R` - This script makes **Figure S2.5** in the Supplementary material.
