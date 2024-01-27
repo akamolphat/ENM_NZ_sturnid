@@ -7,6 +7,12 @@ This repository is divided into different folders for different tasks. Each fold
 │   └── README.md
 │   
 ├── scripts
+│   ├── myna
+│   │   ├── blockCV_ENM
+│   │   └── README.md
+│   ├── starling
+│   │   ├── ENM
+│   │   └── README.md
 │   └── README.md
 |
 ├── results
@@ -16,7 +22,7 @@ This repository is divided into different folders for different tasks. Each fold
 └── .gitignore
 ```
 
-As part of the analyses, two folders are created, namely:
+As part of the analyses, two folders are created within this directory, namely:
 
 * `myna`
 * `starling`
