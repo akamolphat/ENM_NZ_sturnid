@@ -11,4 +11,7 @@ This folder contains the following scripts:
 * `make_pop_dens.R` - This script calculates population density from population counts per grid cell.
 * `make_pop_dens.sl` - This script runs make_pop_dens.R. Note that the paths in your local environment will change but this is uploaded here for completeness.
 * `plot_filtered_thinned_occurrences.R` - This script makes **Figure 1** of the main text.
+* `star_myna_varimp_plot.R` - This script makes **Figure 2** of the main text.
+* `compare_future_present_proj.R` - This script makes **Figures 3 and 4** of the main text.
 * `plot_clamping_masks.R` - This script makes **Figure S2.5** in the Supplementary material.
+
