@@ -14,6 +14,8 @@ This folder consists of the following files:
 * `02*` - clip environmental variables to shapefiles to create input environmental variable files. This clean up the environmental tiff files. `02_`, `02b_`, `02c` were ran with a slurm script. `02d` was run interactively.
 * `03*` - clean myna occurrences.
 * `04*` - thin myna occurrences.
+* `05*` - converts tiff files to dataframe. This is used for NOA, but also for ease in performing correlations to assess variable collinearity when using the environmental variables for the ENM.
+* `06*` - performs correlation analyses (Pearson's; 06b_*.sl include for Spearmans, but not used in the end. Spearman's require a lot more computation power).
 ### ENM
 * `blockCV_ENM\` - contains scripts used to perform ENMs on myna data
 ### NOA
