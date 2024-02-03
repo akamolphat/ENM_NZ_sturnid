@@ -14,8 +14,10 @@ This folder consists of the following files:
 * `02*` - clip environmental variables to shapefiles to create input environmental variable files. This clean up the environmental tiff files. `02_`, `02b_`, `02c` were ran with a slurm script. `02d` was run interactively.
 * `03*` - clean starling occurrences.
 * `04*` - thin starling occurrences.
-* `05*` - converts tiff files to dataframe. This is used for NOA, but also for ease in performing correlations to assess variable collinearity when using the environmental variables for the ENM.
-* `06*` - performs correlation analyses (Pearson's; 06b_*.sl include for Spearmans, but not used in the end. Spearman's require a lot more computation power).
+* `05*` 
+  * `05_*` - converts tiff files to dataframe, but only for subsets of the dataset. This is because the native range is too large. This is for performing correlations to assess variable collinearity when using the environmental variables for the ENM.
+  * `05b_*` - converts tiff files to dataframe for UK and NZ. This is used for NOA.
+* `06*` - performs correlation analyses.
 ### ENM
 * `ENM\` - contains scripts used to perform ENMs on myna data
 ### NOA
