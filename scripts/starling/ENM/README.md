@@ -3,12 +3,12 @@
 This folder performs ENM on the starling data. This folder is structured as follows:
 
 ```
-├── native
-│   └── README.md
-├── nativeNZ
-│   └── README.md
-├── NZ
-│   └── README.md
+├── native/
+│   
+├── nativeNZ/
+│   
+├── NZ/
+│   
 ├── 02_starling_tune_biomod2_maxent.R
 ├── 03_starling_blockCV_ENM.R
 ├── 03b_starling_blockCV_ENM_projections.R
