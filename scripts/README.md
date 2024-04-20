@@ -19,6 +19,8 @@ This folder is arranged as follows:
 ├── star_myna_varimp_plot.R
 ├── compare_future_present_proj.R
 ├── plot_clamping_masks.R
+├── NZ_myna_vs_starling_humboldt.R
+├── NZ_myna_vs_starling_humboldt_v2.sl
 └── README.md
 ```
 
@@ -34,4 +36,5 @@ This folder contains the following scripts:
 * `star_myna_varimp_plot.R` - This script makes **Figure 2** of the main text.
 * `compare_future_present_proj.R` - This script makes **Figures 3 and 4** of the main text.
 * `plot_clamping_masks.R` - This script makes **Figure S2.5** in the Supplementary material.
+* `NZ_myna_vs_starling_humboldt_v2.sl` calls `NZ_myna_vs_starling_humboldt.R` and performs NOA between starlings and mynas in New Zealand, and makes **Figures S2.10 and S2.11**.
 
