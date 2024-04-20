@@ -3,6 +3,14 @@
 The scripts in this folder performs ENM on the myna data. This folder is structured as follows:
 
 ```
+├── native/
+│   
+├── nativeNZ/
+│   
+├── NZ/
+│   
+├── model_eval_proj.R
+└── README.md
 
 ```
 
